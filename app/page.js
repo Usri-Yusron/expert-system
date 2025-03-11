@@ -20,7 +20,7 @@ export default function Home() {
               Our Team
             </Link>
             <Link className="hidden text-sm hover:text-cyan-400 sm:block" href="/login">
-              Tech Stuck
+              Tech Stack
             </Link>
           </div>
         </div>
