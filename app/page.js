@@ -1,31 +1,14 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { ArrowRight, CheckCircle2, CreditCard, LineChart, Lock, Wallet, PawPrint } from "lucide-react"
+import { CreditCard, LineChart, Lock } from "lucide-react"
 import Link from "next/link"
-import Button from "./components/button"
+import Button from "./components/Button"
+import Footer from "./components/Footer"
 
 export default function Home() {
   return (
     <div className="min-h-screen bg-black text-white">
-      {/* Navigation */}
-      <header className="fixed top-0 z-50 w-full border-b border-white/10 bg-black/50 backdrop-blur-xl">
-        <div className="container flex h-16 items-center justify-around px-4">
-          <Link className="flex items-center space-x-2 font-bold" href="/">
-            <PawPrint className="h-6 w-6 text-cyan-400" />
-            <span>MeowMed</span>
-          </Link>
-          <div className="flex items-center space-x-5">
-            <Link className="hidden text-sm hover:text-cyan-400 sm:block" href="/login">
-              Our Team
-            </Link>
-            <Link className="hidden text-sm hover:text-cyan-400 sm:block" href="/login">
-              Tech Stack
-            </Link>
-          </div>
-        </div>
-      </header>
-
       {/* Hero Section */}
       <section className="relative flex min-h-screen items-center justify-center overflow-hidden pt-16">
         {/* Animated Elements */}
@@ -154,20 +137,13 @@ export default function Home() {
             className="mx-auto max-w-3xl space-y-8"
           >
             <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl lg:text-7xl">
-              Dinero Global en Movimiento
+              Ask me everything
             </h1>
             <p className="mx-auto max-w-2xl text-muted text-gray-400 sm:text-xl">
-              Nuestra plataforma le permite a tu negocio tener acceso a rieles de pagos internacionales en segundos en
-              vez de horas
+              Solusi cerdas untuk menanyakan gejala penyakit pada kucing kesayangan.
             </p>
             <div className="flex justify-center space-x-4">
-              <Button className="bg-gradient-to-r from-cyan-400 to-violet-500 text-lg text-black hover:from-cyan-500 hover:to-violet-600">
-                Comenzar
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-              <Button variant="outline" className="border-white/10 text-lg text-white hover:bg-white/10">
-                Saber Más
-              </Button>
+              <Button child={"Let's Start"}/>
             </div>
           </motion.div>
         </div>
@@ -254,24 +230,9 @@ export default function Home() {
         </div>
       </section> */}
 
-      {/* Footer */}
-      <footer className="border-t border-white/10 bg-black py-8">
-        <div className="container flex flex-col items-center justify-between space-y-4 px-4 md:flex-row md:space-y-0">
-          <div className="flex items-center space-x-2">
-            <Wallet className="h-6 w-6 text-cyan-400" />
-            <span className="font-bold">Ares</span>
-          </div>
-          <p className="text-sm text-gray-400">© {new Date().getFullYear()} Ares. Todos los derechos reservados.</p>
-          <div className="flex space-x-6">
-            <Link className="text-sm text-gray-400 hover:text-cyan-400" href="#">
-              Privacidad
-            </Link>
-            <Link className="text-sm text-gray-400 hover:text-cyan-400" href="#">
-              Términos
-            </Link>
-          </div>
-        </div>
-      </footer>
+      {/* footer */}      
+      <Footer />
+      {/* footer selesai */}
     </div>
   )
 }

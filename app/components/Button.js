@@ -1,15 +1,18 @@
 import React from 'react';
+import Link from "next/link"
 import styled from 'styled-components';
 
-const Button = () => {
+export default function Button({child}) {
   return (
     <StyledWrapper>
-      <button>
-        Sign up
+      <Link href="/chat">
+      <button className="bg-gradient-to-r from-cyan-400 to-violet-500 text-lg text-black hover:from-cyan-500 hover:to-violet-600">
+        {child}
         <div className="arrow-wrapper">
           <div className="arrow" />
         </div>
       </button>
+      </Link>
     </StyledWrapper>
   );
 }
@@ -74,5 +77,3 @@ const StyledWrapper = styled.div`
   button:hover .arrow:before {
     right: 0;
   }`;
-
-export default Button;
