@@ -1,7 +1,7 @@
 "use client"
 
 import { motion } from "framer-motion"
-import { CreditCard, LineChart, Lock } from "lucide-react"
+import { ArrowRight, CreditCard, LineChart, Lock, CheckCircle2 } from "lucide-react"
 import Link from "next/link"
 import Button from "./components/Button"
 import Footer from "./components/Footer"
@@ -201,7 +201,7 @@ export default function Home() {
       </section>
 
       {/* CTA Section */}
-      {/* <section className="relative z-10 border-t border-white/10 bg-black py-24">
+      <section className="relative z-10 border-t border-white/10 bg-black py-24">
         <div className="container px-4">
           <div className="mx-auto max-w-3xl rounded-2xl border border-white/10 bg-gradient-to-r from-cyan-950/50 to-violet-950/50 p-8 text-center backdrop-blur-sm md:p-12 lg:p-16">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">¿Listo para Comenzar?</h2>
@@ -228,7 +228,7 @@ export default function Home() {
             </Button>
           </div>
         </div>
-      </section> */}
+      </section>
 
       {/* footer */}      
       <Footer />
